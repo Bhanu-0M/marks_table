@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks table</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <h1>Student Marks Table</h1>
+    <form>
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" required><br>
+
+        <label for="rollNumber">Roll Number:</label>
+        <input type="text" id="rollNumber" required><br>
+
+        <label for="subject1Marks">Subject 1 Marks:</label>
+        <input type="number" id="subject1Marks" required><br>
+
+        <label for="subject2Marks">Subject 2 Marks:</label>
+        <input type="number" id="subject2Marks" required><br>
+
+        <label for="subject3Marks">Subject 3 Marks:</label>
+        <input type="number" id="subject3Marks" required><br>
+
+        <input type="button" value="Add student record" onclick="createTable()">
+    </form>
+
+    <table border="1" id="studentTable">
+        <tr>
+            <th>Student Name</th>
+            <th>Roll Number</th>
+            <th>Subject 1 Marks</th>
+            <th>Subject 2 Marks</th>
+            <th>Subject 3 Marks</th>
+            <th>Total Marks</th>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
